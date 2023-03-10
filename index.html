@@ -47,6 +47,7 @@
         </div>
 
         <a href="#timetable"><button type="submit" class="btn btn-danger searchButton" onclick="courseList()" style="white-space: nowrap;"> Find Time Table </button></a> 
+        <h6 id="move" class="hidemee">Now scroll down to get your time table</h6>
         <h6 id="tagLine">Say Goodbye to Boring Work and Hello to Productivity <br> - Let Us Save Your Time!</h6>
     </div>
     <div id="timetable" class="tt"  >
@@ -294,8 +295,10 @@
                 timing:"12:07"
             }
         ]
+        let scroll1 = document.getElementById("move");
 
         function courseList() {
+            scroll1.classList.remove("hidemee")
 
             tagLine.innerText = "Please reload website if you are going to search time table again!"
             tagLine.style.color = "red";

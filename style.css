@@ -563,6 +563,12 @@ h3{
     
 }
 
+.hidemee{
+    opacity: 0;
+}
+#move{
+    white-space: nowrap;
+}
 
 /* @media(max-width:1600px){
  
