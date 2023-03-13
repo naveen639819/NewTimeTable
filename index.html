@@ -242,58 +242,560 @@
         let col_93 = document.getElementById("col93")
         let col_94 = document.getElementById("col94")
         let notFound = document.getElementById("notFound")
-        let [MTL710, MTL720, MTL730,MTL740,MTL750,MTL760,MTL770,MTL780,MTL790] = [
+        let [MTL730, MTL717,RDL700,ASL340,PYL655,PYL704,ESL300,ESL773,ASL736,MTL743,PYL313,PYL752,PYL102,MTL757,ASL757,ESL755,PYL760,PYL726,RDL770,RDL725_20,MTL735,MTL506,HSL661,MTL863,ESL749,ASL738,ESL710,PYL552,PYL705,ESL768,PYL748,MTL507,PYL743,ASL737,MTL729,MTL745,ESL744,HSL622,MTL733,MTL510,MTL756,PYL558_42,PYL707,PYL756,ESL880,HSL621,HSL712,HSL749,HSL768,HSL651,HSL724,HSL725,HSL718,RDL726,MTL744,ESL875,ESL718,MTL725,MTL508,MTL851,MTL768,MTL782,PYL563,RDL710,RDL727,ASL735,PYL792,PYL739,PYL762,ESL730,MTL742,PYL749,RDL730,HSL614,ESL776,ESL729,MTL874,ASL751,PYL770,MTL509_80,PYL560,RDL722,ASL762,ESL871,RDL761,MTL854,ESL770  ] = [
+        
+
             {
-                date: "20/03/2023",
-                name: "Computational algorithm its application",
-                room:"LH310",
-                timing:"2:00pm"
+                date: "23/03/2023",
+                name: "Cryptography",
+                room:"LH 325",
+                timing:"8:00 - 9:00"
             },
             {
-                date: "21/03/2023",
-                name: "Stochastic process its application2",
-                room:"LH3210",
-                timing:"23:00pm"
+                date: "23/03/2023",
+                name: "Fuzzy Sets and Applications",
+                room:"LH 108",
+                timing:"11:00 - 12:00"
             }, {
                 date: "23/03/2023",
-                name: "C",
-                room:"LH3",
-                timing:"12:03"
+                name: "Biomass Production",
+                room:"LH 310",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Fundamentals of Weather and Climate",
+                room:"LH 316",
+                timing:"11:00 - 12:00"
+            },{
+                date: "23/03/2023",
+                name: "Laser Physics",
+                room:"LH 416",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Science and Technology of Thin Films ",  //6
+                room:"LH 418",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Self-Organizing Dynamical Systems",  //7
+                room:"LH 510",
+                timing:"11:00 - 12:00"
+            },{
+                date: "23/03/2023",
+                name: "Plasma Based Materials Processing", //8
+                room:"LH 526",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Science of Climate Change", //9
+                room:"LH 606",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Fourier Analysis",  //10
+                room:"LH 611",
+                timing:"11:00 - 12:00"
+            },        {
+                date: "23/03/2023",
+                name: "Fourier Optics and Holography",  //11
+                room:"LH 421",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Laser systems and applications",   //12
+                room:"LH 422",
+                timing:"11:00 - 12:00"
+            },
+
+            {
+                date: "23/03/2023",
+                name: "Principles of Electronic Materials",   //13
+                room:"LH 121",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Principles of Electronic Materials",   //14
+                room:"LH 121",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Tropical Weather and Climate",   //15 
+                room:"LH 606",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Solar Photovoltaic Devices and Systems ",   //16
+                room:"LH 612",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Biomedical optics and Bio-photonics ",   //17
+                room:"LH 512",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "23/03/2023",
+                name: "Semiconductor Device Technology",   //18
+                room:"V LT 1",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "23/03/2023",
+                name: "Rural Value Chain and .... ",   //19
+                room:"LH 308",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Ecological Perspective of Growth & Development",   //20
+                room:"LH 408",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Advanced Number Theory",   //21
+                room:"LH 418",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Complex Analysis",   //22
+                room:"LH 510",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Cognitive Processes",   //23
+                room:"LH 602",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Algebraic Number Theory",   //24
+                room:"LH 604",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Developing Energy Efficiency and .. ",   //25
+                room:"LH 606",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "23/03/2023",
+                name: "Numerical Modeling of the Atmosphere and Ocean",   //26
+                room:"LH 518",
+                timing:"16:00 - 17:00"
             },
             {
                 date: "24/03/2023",
-                name: "E",
-                room:"LH4",
-                timing:"12:04"
-            },{
+                name: "Energy, Ecology and Environment",   //27
+                room:"LH 526",
+                timing:"8:00 - 9:00"
+            },
+            {
+                date: "24/03/2023",
+                name: "Electrodynamics",   //28
+                room:"LH 310",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "24/03/2023",
+                name: "Nanostructured Materials ",   //29
+                room:"LH 408",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "24/03/2023",
+                name: "Wind Energy and Hydro Power Systems ",   //30
+                room:"LH 512",
+                timing:"11:00 - 12:00"
+            },
+            
+            {
+                date: "24/03/2023",
+                name: "Quantum Optics",   //31
+                room:"LH 621",
+                timing:"11:00 - 12:00"
+            },
+
+            {
+                date: "24/03/2023",
+                name: "Topology",   //32
+                room:"LH 111",
+                timing:"13:00 - 14:00"
+            },
+
+            {
+                date: "24/03/2023",
+                name: "Group Theory",   //33
+                room:"VI LT 2",
+                timing:"13:00 - 14:00"
+            },
+
+            {
+                date: "24/03/2023",
+                name: "Physical and Dynamical Oceanography",   //34
+                room:"LH 521",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "24/03/2023",
+                name: "Computational Algebra and its Applications",   //35
+                room:"LH 614",
+                timing:"13:00 - 14:00"
+            },
+            
+            {
+                date: "24/03/2023",
+                name: "Advanced Matrix Theory",   //36
+                room:"LH 308",
+                timing:"14:30 - 15:30"
+            },
+            
+            {
+                date: "24/03/2023",
+                name: "Plasmas for Energy and Environment",   //37
+                room:"LH 520",
+                timing:"14:30 - 15:30"
+            },
+            
+
+            {
+                date: "24/03/2023",
+                name: "Computation and Cognition",   //38
+                room:"LH 418",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "24/03/2023",
+                name: "Stochastic of Finance",   //39
+                room:"LH 510",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "24/03/2023",
+                name: "Measure and Integration",   //40
+                room:"LH 526 & LH 527",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "24/03/2023",
+                name: "Lie Algebras and Lie Groups",   //41
+                room:"LH 520",
+                timing:"16:00 - 17:00"
+            },
+            {
                 date: "25/03/2023",
-                name: "F",
-                room:"LH4",
-                timing:"12:05"
+                name: "Statistical Mechanics ",   //42
+                room:"LH 318",
+                timing:"8:00 - 9:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Characterization Techniques for Materials",   //43
+                room:"LH 408",
+                timing:"8:00 - 9:00"
+            },
+
+            {
+                date: "25/03/2023",
+                name: "Fourier optics and holography",   //44
+                room:"LH 521",
+                timing:"9:30 - 10:30"
+            },
+            {
+                date: "25/03/2023",
+                name: "Solar Thermal Power Generation",   //45
+                room:"LH 620",
+                timing:"9:30 - 10:30"
+            },
+            
+{
+                date: "25/03/2023",
+                name: "Mathematical Foundations for Cognitive Science",   //46
+                room:"LH 318",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Microeconomics",   //47
+                room:"LH 526",
+                timing:"11:00 - 12:00"
+            },
+            
+            {
+                date: "25/03/2023",
+                name: "Optimality Theory and Harmonic Grammar",   //48
+                room:"VI LT 1",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Judgment and Decision Making ",   //49
+                room:"LH 519",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Philosophy of Mind and Cognition ",   //50
+                room:"LH 606",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Advanced Experimental Methods",   //51
+                room:"LH 611",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Advanced Qualitative Methods",   //52
+                room:"LH 518",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Political Economy of Development",   //53
+                room:"LH 519",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "25/03/2023",
+                name: "Herbal, Medicinal and Aromatic Plants",   //54
+                room:"LH 521",
+                timing:"14:30 - 15:30"
+            },
+            
+            {
+                date: "25/03/2023",
+                name: "Mathematical Theory of Coding",   //55
+                room:"LH 606",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "25/03/2023",
+                name: "Alternative Fuels for Transportation",   //56
+                room:"LH 619",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "25/03/2023",
+                name: "Power Generation, Transmission and Distribution",   //57
+                room:"LH 520",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "25/03/2023",
+                name: "Stochastic Processes and its Applications",   //58
+                room:"LH 620",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "25/03/2023",
+                name: "Mathematical Programming",   //59
+                room:"LH 310",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Applied Numerical Analysis",   //60
+                room:"LH 408",
+                timing:"16:00 - 17:00"
+            },
+            {
+                date: "25/03/2023",
+                name: "Graph Theory",   //61
+                room:"LH 603",
+                timing:"16:00 - 17:00"
             },
             {
                 date: "26/03/2023",
-                name: "G",
-                room:"LH5",
-                timing:"12:06"
+                name: "Data Mining",   //62
+                room:"LH 114",
+                timing:"8:00 - 9:00"
             },
             {
-                date: "27/03/2023",
-                name: "F",
-                room:"LH5",
-                timing:"12:05"
-            },{
-                date: "28/03/2023",
-                name: "G",
-                room:"LH5",
-                timing:"12:06"
+                date: "26/03/2023",
+                name: "Solid State Physics ",   //63
+                room:"LH 316",
+                timing:"8:00 - 9:00"
             },
             {
-                date: "29/03/2023",
-                name: "H",
-                room:"LH6",
-                timing:"12:07"
+                date: "26/03/2023",
+                name: " Rural India and Planning for Development",   //64
+                room:"LH 318",
+                timing:"8:00 - 9:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Conservation and Recycling ...",   //65
+                room:"LH 410",
+                timing:"8:00 - 9:00"
+            },
+            
+            {
+                date: "26/03/2023",
+                name: "Atmospheric Chemistry and Air Pollution",   //66
+                room:"LH 519",
+                timing:"8:00 - 9:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Optical Electronics",   //67
+                room:"LH 521",
+                timing:"8:00 - 9:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Computational Techniques for ...",   //68
+                room:"LH 615",
+                timing:"8:00 - 9:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Statistical Optics",   //69
+                room:"LH 612",
+                timing:"8:00 - 9:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Direct Energy Conversion",   //70
+                room:"LH 521",
+                timing:"9:30 - 10:30"
+            },
+            {
+                date: "26/03/2023",
+                name: "Operator Theory",   //71
+                room:"LH 602",
+                timing:"9:30 - 10:30"
+            },
+            
+            {
+                date: "26/03/2023",
+                name: "Quantum Information and Computation",   //72
+                room:"LH 611",
+                timing:"9:30 - 10:30"
+            },
+            {
+                date: "26/03/2023",
+                name: "Technology Alt. for Rural Development",   //73
+                room:"LH 613",
+                timing:"9:30 - 10:30"
+            },
+            
+            {
+                date: "26/03/2023",
+                name: "Development Economics",   //74
+                room:"LH 615",
+                timing:"9:30 - 10:30"
+            },
+            {
+                date: "26/03/2023",
+                name: "Industrial Energy and ...",   //75
+                room:"LH 520",
+                timing:"9:30 - 10:30"
+            },
+            {
+                date: "26/03/2023",
+                name: "Renewable Energy and Environment",   //76
+                room:"LH316 & LH318",
+                timing:"11:00 - 12:00"
+            },
+            
+
+            {
+                date: "26/03/2023",
+                name: "Analysis",   //77
+                room:"LH 519",
+                timing:"11:00 - 12:00"
+            },
+            
+            {
+                date: "26/03/2023",
+                name: "Dispersion of Air Pollutants",   //78
+                room:"LH 630",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Ultra-fast optics and applications",   //79
+                room:"LH 518",
+                timing:"11:00 - 12:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Numerical Analysis",   //80
+                room:"LH 316",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Applied Optics",   //81
+                room:"LH 408",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Rural Energy Systems",   //82
+                room:"LH 512",
+                timing:"13:00 - 14:00"
+            },
+            
+            {
+                date: "26/03/2023",
+                name: "Air-Sea Interaction",   //83
+                room:"LH 606",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Advanced Fusion Energy ",   //84
+                room:"LH 520",
+                timing:"13:00 - 14:00"
+            },
+            {
+                date: "26/03/2023",
+                name: "Value Chain in Agro ...",   //85
+                room:"LH 316",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "26/03/2023",
+                name: "Interpolation and Approximation",   //86
+                room:"LH 318",
+                timing:"14:30 - 15:30"
+            },
+            {
+                date: "26/03/2023",
+                name: "Solar Energy Utilization ",   //87
+                room:"LH 612",
+                timing:"14:30 - 15:30"
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
         ]
         let scroll1 = document.getElementById("move");
 
@@ -304,8 +806,8 @@
             tagLine.style.color = "red";
             var input = document.getElementById("exampleFormControlInput1").value;
             var item = input.split(" ");
-            if (['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].includes(item[0])) {
-                let [resultElement_1] = ['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].filter(element => element === item[0]);
+            if (["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].includes(item[0])) {
+                let [resultElement_1] = ["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].filter(element => element === item[0]);
                 
                 col_21.innerText = eval('(' + resultElement_1 + ')').date;
                 col_22.innerText = eval('(' + resultElement_1 + ')').name;
@@ -327,8 +829,8 @@
 
 
 
-            if (['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].includes(item[1])) {
-                let [resultElement_2] = ['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].filter(element => element === item[1]);
+            if (["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].includes(item[1])) {
+                let [resultElement_2] = ["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].filter(element => element === item[1]);
                 col_31.innerText = eval('(' + resultElement_2 + ')').date;
                 col_32.innerText = eval('(' + resultElement_2 + ')').name;
                 col_33.innerText = eval('(' + resultElement_2 + ')').room;
@@ -342,8 +844,8 @@
             }
 
 
-            if (['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].includes(item[2])) {
-                let [resultElement_3] = ['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].filter(element => element === item[2]);
+            if (["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].includes(item[2])) {
+                let [resultElement_3] = ["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].filter(element => element === item[2]);
                 col_41.innerText = eval('(' + resultElement_3 + ')').date;
                 col_42.innerText = eval('(' + resultElement_3 + ')').name;
                 col_43.innerText = eval('(' + resultElement_3 + ')').room;
@@ -357,8 +859,8 @@
             }
 
 
-            if (['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].includes(item[3])) {
-                let [resultElement_4] = ['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].filter(element => element === item[3]);
+            if (["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].includes(item[3])) {
+                let [resultElement_4] = ["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].filter(element => element === item[3]);
                 col_51.innerText = eval('(' + resultElement_4 + ')').date;
                 col_52.innerText = eval('(' + resultElement_4 + ')').name;
                 col_53.innerText = eval('(' + resultElement_4 + ')').room;
@@ -372,8 +874,8 @@
             }
 
 
-            if (['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].includes(item[4])) {
-                let [resultElement_5] = ['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].filter(element => element === item[4]);
+            if (["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].includes(item[4])) {
+                let [resultElement_5] = ["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].filter(element => element === item[4]);
                 col_61.innerText = eval('(' + resultElement_5 + ')').date;
                 col_62.innerText = eval('(' + resultElement_5 + ')').name;
                 col_63.innerText = eval('(' + resultElement_5 + ')').room;
@@ -388,8 +890,8 @@
 
 
 
-            if (['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].includes(item[5])) {
-                let [resultElement_6] = ['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].filter(element => element === item[5]);
+            if (["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].includes(item[5])) {
+                let [resultElement_6] = ["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].filter(element => element === item[5]);
                 col_71.innerText = eval('(' + resultElement_6 + ')').date;
                 col_72.innerText = eval('(' + resultElement_6 + ')').name;
                 col_73.innerText = eval('(' + resultElement_6 + ')').room;
@@ -402,8 +904,8 @@
                 }
             }
 
-            if (['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].includes(item[6])) {
-                let [resultElement_7] = ['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].filter(element => element === item[6]);
+            if (["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].includes(item[6])) {
+                let [resultElement_7] = ["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].filter(element => element === item[6]);
                 col_81.innerText = eval('(' + resultElement_7 + ')').date;
                 col_82.innerText = eval('(' + resultElement_7 + ')').name;
                 col_83.innerText = eval('(' + resultElement_7 + ')').room;
@@ -417,8 +919,8 @@
             }
 
 
-            if (['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].includes(item[7])) {
-                let [resultElement_8] = ['MTL710', 'MTL720', 'MTL730','MTL740', 'MTL750', 'MTL760','MTL770', 'MTL780', 'MTL790'].filter(element => element === item[7]);
+            if (["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].includes(item[7])) {
+                let [resultElement_8] = ["MTL730", "MTL717","RDL700","ASL340","PYL655","PYL704","ESL300","ESL773","ASL736","MTL743","PYL313","PYL752","PYL102","MTL757","ASL757","ESL755","PYL760","PYL726","RDL770","RDL725","MTL735","MTL506","HSL661","MTL863","ESL749","ASL738","ESL710","PYL552","PYL705","ESL768","PYL748","MTL507","PYL743","ASL737","MTL729","MTL745","ESL744","HSL622","MTL733","MTL510","MTL756","PYL558","PYL707","PYL756","ESL880","HSL621","HSL712","HSL749","HSL768","HSL651","HSL724","HSL725","HSL718","RDL726","MTL744","ESL875","ESL718","MTL725","MTL508","MTL851","MTL768","MTL782","PYL563","RDL710","RDL727","ASL735","PYL792","PYL739","PYL762","ESL730","MTL742","PYL749","RDL730","HSL614","ESL776","ESL729","MTL874","ASL751","PYL770","MTL509","PYL560","RDL722","ASL762","ESL871","RDL761","MTL854","ESL770"].filter(element => element === item[7]);
                 col_91.innerText = eval('(' + resultElement_8 + ')').date;
                 col_92.innerText = eval('(' + resultElement_8 + ')').name;
                 col_93.innerText = eval('(' + resultElement_8 + ')').room;
